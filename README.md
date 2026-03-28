@@ -57,12 +57,14 @@ This project is built with a focus on:
 ---
 
 ## 📂 Project Structure
+
+```
 / (root)
 ├── README.md
 ├── src/
 ├── docs/
 └── tests/
-
+```
 
 *(Structure will evolve as development progresses)*
 
