@@ -9,7 +9,7 @@ interface FieldErrors {
 
 type Status = "idle" | "loading" | "success" | "error";
 
-// Simple email regex — matches backend's Zod .email() expectation
+// Simple email regex — matches backend's Zod `.email()` expectation
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function validate(fields: RegisterPayload): FieldErrors {
@@ -47,7 +47,7 @@ export default function RegisterForm() {
   function handleChange(e: ChangeEvent<HTMLInputElement>) {
     const { name, value } = e.target;
     setFields((prev) => ({ ...prev, [name]: value }));
-    // Clear inline error for the field being edited
+    // Clear the inline error for the field being edited
     setFieldErrors((prev) => ({ ...prev, [name]: undefined }));
   }
 
