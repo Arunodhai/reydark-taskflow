@@ -47,7 +47,6 @@ export default function RegisterForm() {
   function handleChange(e: ChangeEvent<HTMLInputElement>) {
     const { name, value } = e.target;
     setFields((prev) => ({ ...prev, [name]: value }));
-
     // Clear the inline error for the field being edited
     setFieldErrors((prev) => ({ ...prev, [name]: undefined }));
   }
